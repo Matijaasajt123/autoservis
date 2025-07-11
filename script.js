@@ -72,46 +72,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/*===== SCROLL ANIMATIONS =====*/
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-        }
-    });
-}, observerOptions);
-
-// Observe all elements with scroll-animate class
-document.addEventListener('DOMContentLoaded', () => {
-    const animateElements = document.querySelectorAll('.scroll-animate');
-    animateElements.forEach(el => observer.observe(el));
-    
-    // Add scroll-animate class to service cards
-    const serviceCards = document.querySelectorAll('.service__card');
-    serviceCards.forEach((card, index) => {
-        card.classList.add('scroll-animate');
-        card.style.transitionDelay = `${index * 0.1}s`;
-    });
-    
-    // Add scroll-animate class to about features
-    const aboutFeatures = document.querySelectorAll('.about__feature');
-    aboutFeatures.forEach((feature, index) => {
-        feature.classList.add('scroll-animate');
-        feature.style.transitionDelay = `${index * 0.1}s`;
-    });
-    
-    // Add scroll-animate class to contact info items
-    const contactItems = document.querySelectorAll('.contact__info-item');
-    contactItems.forEach((item, index) => {
-        item.classList.add('scroll-animate');
-        item.style.transitionDelay = `${index * 0.1}s`;
-    });
-});
 
 /*===== FORM VALIDATION =====*/
 const contactForm = document.getElementById('contact-form');
@@ -394,22 +355,6 @@ formInputs.forEach(input => {
         input.parentNode.classList.add('focused');
     }
 });
-
-/*===== LAZY LOADING FOR IMAGES =====*/
-const images = document.querySelectorAll('img[loading="lazy"]');
-
-const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.src;
-            img.classList.add('loaded');
-            imageObserver.unobserve(img);
-        }
-    });
-});
-
-images.forEach(img => imageObserver.observe(img));
 
 /*===== PERFORMANCE OPTIMIZATION =====*/
 // Debounce function for scroll events
