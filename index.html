@@ -3,356 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Profesionalni auto servis - popravka motora, mijenjanje guma, dijagnostika vozila. Iskusni mehaničari, kvalitetne usluge.">
-    <meta name="keywords" content="auto servis, popravka automobila, mehaničar, dijagnostika, gume, motor">
-    <title>ProAuto Servis - Vaš pouzdani partner za automobile</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Auto Servis Valjevo | Pouzdan Partner na Putu</title>
+    <meta name="description" content="Pouzdan auto servis u Valjevu. Nudimo brzu dijagnostiku, redovan servis, popravku kočnica i mehanike. Zakažite termin online!">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <h2>ProAuto</h2>
-            </div>
-            
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Početna</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">Usluge</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">O nama</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Kontakt</a>
-                    </li>
-                </ul>
-                <div class="nav__close" id="nav-close">
-                    <span>&times;</span>
-                </div>
-            </div>
-            
-            <div class="nav__toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+
+    <!-- Header & Hero Sekcija -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Auto Servis [Ime Vašeg Servisa]</h1>
+            <p>Vrhunska briga o vašem automobilu u srcu Valjeva. Brza, profesionalna i pouzdana usluga po vašoj meri.</p>
+            <a href="#kontakt-forma" class="cta-button">Zakažite Servis Odmah</a>
+        </div>
     </header>
 
-    <!-- Main -->
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero section" id="home">
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h1 class="hero__title">
-                        Vaš <span class="hero__title-accent">pouzdani</span><br>
-                        auto servis
-                    </h1>
-                    <p class="hero__description">
-                        Profesionalne usluge popravke i održavanja vozila sa više od 15 godina iskustva. 
-                        Kvalitet i pouzdanost na prvom mjestu.
-                    </p>
-                    <div class="hero__buttons">
-                        <a href="#contact" class="button button--primary">Zakažite termin</a>
-                        <a href="#services" class="button button--secondary">Naše usluge</a>
-                    </div>
+    <main>
+        <!-- Usluge -->
+        <section id="usluge" class="services-section">
+            <h2>Sve što je potrebno vašem automobilu</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/service-regular.jpg" alt="Redovan servis automobila">
+                    <h3>Redovan Servis</h3>
+                    <p>Produžite životni vek vašeg vozila. Vršimo zamenu ulja, filtera i kompletnu proveru ključnih tačaka.</p>
                 </div>
-                <div class="hero__stats">
-                    <div class="hero__stat">
-                        <h3 class="hero__stat-number">500+</h3>
-                        <p class="hero__stat-text">Zadovoljnih klijenata</p>
-                    </div>
-                    <div class="hero__stat">
-                        <h3 class="hero__stat-number">15+</h3>
-                        <p class="hero__stat-text">Godina iskustva</p>
-                    </div>
-                    <div class="hero__stat">
-                        <h3 class="hero__stat-number">24/7</h3>
-                        <p class="hero__stat-text">Hitne intervencije</p>
-                    </div>
+                <div class="service-card">
+                    <img src="images/service-diagnostics.jpg" alt="Dijagnostika kvara na automobilu">
+                    <h3>Dijagnostika Kvarova</h3>
+                    <p>Pomoću najsavremenije opreme brzo i precizno otkrivamo svaki problem na vašem vozilu.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-brakes.jpg" alt="Servis kočnica">
+                    <h3>Servis Kočnica</h3>
+                    <p>Vaša bezbednost je na prvom mestu. Kompletna provera, popravka i zamena kočionog sistema.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-ac.jpg" alt="Servis auto klime">
+                    <h3>Servis Klima Uređaja</h3>
+                    <p>Nudimo punjenje, čišćenje i popravku klima uređaja za maksimalan komfor u vožnji.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section class="services section" id="services">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Naše usluge</h2>
-                    <p class="section__subtitle">
-                        Pružamo kompletne usluge održavanja i popravke vozila
-                    </p>
+        <!-- Zašto Baš Mi -->
+        <section id="zasto-mi" class="why-us-section">
+            <h2>Vaše poverenje je naša najveća vrednost</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Stručan Tim</h3>
+                    <p>Naši majstori se redovno usavršavaju i svakom vozilu pristupaju sa punom pažnjom.</p>
                 </div>
-
-                <div class="services__container">
-                    <article class="service__card">
-                        <div class="service__image">
-                            <img src="images/engine_repair.jpg" alt="Popravka motora" loading="lazy">
-                        </div>
-                        <div class="service__content">
-                            <h3 class="service__title">Popravka motora</h3>
-                            <p class="service__description">
-                                Kompletan servis motora uključujući dijagnostiku, popravku i zamjenu dijelova. 
-                                Radimo sa svim tipovima motora.
-                            </p>
-                            <ul class="service__features">
-                                <li>Dijagnostika kvarova</li>
-                                <li>Zamjena dijelova</li>
-                                <li>Generalni remont</li>
-                                <li>Garancija na rad</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service__card">
-                        <div class="service__image">
-                            <img src="images/tire_change.jpg" alt="Mijenjanje guma" loading="lazy">
-                        </div>
-                        <div class="service__content">
-                            <h3 class="service__title">Gume i felge</h3>
-                            <p class="service__description">
-                                Profesionalno mijenjanje guma, balansiranje točkova i popravka felgi. 
-                                Radimo sa svim vrstama vozila.
-                            </p>
-                            <ul class="service__features">
-                                <li>Mijenjanje guma</li>
-                                <li>Balansiranje točkova</li>
-                                <li>Popravka felgi</li>
-                                <li>Sezonsko čuvanje</li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article class="service__card">
-                        <div class="service__image">
-                            <img src="images/car_diagnostic.jpg" alt="Dijagnostika vozila" loading="lazy">
-                        </div>
-                        <div class="service__content">
-                            <h3 class="service__title">Dijagnostika vozila</h3>
-                            <p class="service__description">
-                                Moderna računalna dijagnostika za brzu i preciznu identifikaciju problema 
-                                u elektronskim sustavima vozila.
-                            </p>
-                            <ul class="service__features">
-                                <li>OBD dijagnostika</li>
-                                <li>Elektronski sustavi</li>
-                                <li>Pregled prije registracije</li>
-                                <li>Detaljni izvještaj</li>
-                            </ul>
-                        </div>
-                    </article>
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Moderna Oprema</h3>
+                    <p>Koristimo najnovije alate i dijagnostičke uređaje za preciznost i efikasnost u radu.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Transparentnost</h3>
+                    <p>Nema skrivenih troškova. Pre svakog rada dobićete jasnu procenu cene i objašnjenje.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✓</div>
+                    <h3>Kvalitetni Delovi</h3>
+                    <p>Ugrađujemo isključivo proverene delove renomiranih proizvođača, uz garanciju na rad.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Kako izgleda saradnja -->
+        <section id="proces" class="process-section">
+            <h2>Do ispravnog vozila u 3 jednostavna koraka</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Zakažite Termin</h3>
+                    <p>Pozovite nas ili popunite online formu. Naći ćemo termin koji vam najviše odgovara.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Pregled i Konsultacije</h3>
+                    <p>Vršimo detaljan pregled vozila i dajemo vam jasnu ponudu, bez obaveza.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Preuzmite Vozilo</h3>
+                    <p>Nakon vaše saglasnosti, rešavamo problem i obaveštavamo vas čim auto bude spreman.</p>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="about__container">
-                    <div class="about__content">
-                        <div class="section__header">
-                            <h2 class="section__title">O nama</h2>
-                            <p class="section__subtitle">
-                                Više od 15 godina pružamo kvalitetne usluge auto servisa
-                            </p>
-                        </div>
-                        
-                        <p class="about__text">
-                            ProAuto servis je obiteljska firma osnovana 2008. godine sa ciljem pružanja 
-                            najkvalitetnijih usluga održavanja i popravke vozila. Naš tim iskusnih mehaničara 
-                            koristi najnoviju opremu i originalne dijelove.
-                        </p>
-                        
-                        <p class="about__text">
-                            Specijalizirani smo za sve marke vozila i pružamo garanciju na sve naše usluge. 
-                            Naša misija je osigurati sigurnost i pouzdanost vašeg vozila uz konkurentne cijene.
-                        </p>
-
-                        <div class="about__features">
-                            <div class="about__feature">
-                                <div class="about__feature-icon">✓</div>
-                                <div class="about__feature-content">
-                                    <h4>Certificirani mehaničari</h4>
-                                    <p>Tim stručnjaka sa licencama i certifikatima</p>
-                                </div>
-                            </div>
-                            <div class="about__feature">
-                                <div class="about__feature-icon">✓</div>
-                                <div class="about__feature-content">
-                                    <h4>Moderna oprema</h4>
-                                    <p>Najnovija dijagnostička i servisna oprema</p>
-                                </div>
-                            </div>
-                            <div class="about__feature">
-                                <div class="about__feature-icon">✓</div>
-                                <div class="about__feature-content">
-                                    <h4>Originalni dijelovi</h4>
-                                    <p>Koristimo samo kvalitetne i originalne dijelove</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about__image">
-                        <img src="images/hero_background.jpg" alt="Naša radionica" loading="lazy">
-                    </div>
+        <!-- Preporuke -->
+        <section id="preporuke" class="testimonials-section">
+            <h2>Šta naši klijenti kažu</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Konačno servis u Valjevu gde ne brinem da li će me prevariti. Momci su profesionalni, brzi i cene su korektne. Svaka preporuka!"</p>
+                    <span>– Marko P., Valjevo</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Imala sam problem sa elektronikom koji niko nije znao da reši. Ovde su otkrili kvar za pola sata. Hvala vam!"</p>
+                    <span>– Jelena J., Valjevo</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Redovan servis radim samo ovde. Uvek ispoštuju dogovor, pedantni su i auto mi posle njih radi kao sat. Najbolji u gradu."</p>
+                    <span>– Nikola M., Valjevo</span>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact section" id="contact">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Kontaktirajte nas</h2>
-                    <p class="section__subtitle">
-                        Zakažite termin ili postavite pitanje
-                    </p>
+        <!-- Galerija -->
+        <section id="galerija" class="gallery-section">
+            <h2>Naš radni prostor</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery-1.jpg" alt="Auto servis radionica">
+                <img src="images/gallery-2.jpg" alt="Majstor radi na motoru">
+                <img src="images/gallery-3.jpg" alt="Dijagnostička oprema">
+                <img src="images/gallery-4.jpg" alt="Čist i uredan servis">
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="kontakt" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Posetite nas ili nas pozovite</h3>
+                    <p><strong>Adresa:</strong> [Vaša Ulica i Broj], 14000 Valjevo</p>
+                    <p><strong>Telefon:</strong> <a href="tel:+38160123456">[Vaš Broj Telefona]</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:kontakt@vasservis.rs">kontakt@vasservis.rs</a></p>
+                    <p><strong>Radno Vreme:</strong><br>
+                        Ponedeljak – Petak: 08:00 – 17:00<br>
+                        Subota: 08:00 – 14:00</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45854.94142145344!2d19.85994274904785!3d44.2702958117904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759fa1c6c6a96c3%3A0x422a5350393a4a6!2sValjevo!5e0!3m2!1sen!2srs!4v1670000000000!5m2!1sen!2srs" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
+                <div id="kontakt-forma" class="contact-form">
+                    <h3>Zakažite servis online</h3>
+                    <form id="forma">
+                        <label for="ime">Ime i Prezime</label>
+                        <input type="text" id="ime" name="ime" required>
+                        
+                        <label for="telefon">Broj Telefona</label>
+                        <input type="tel" id="telefon" name="telefon" required>
 
-                <div class="contact__container">
-                    <div class="contact__form-container">
-                        <form class="contact__form" id="contact-form">
-                            <div class="contact__form-group">
-                                <label for="name" class="contact__label">Ime i prezime</label>
-                                <input type="text" id="name" name="name" class="contact__input" required>
-                            </div>
-                            
-                            <div class="contact__form-group">
-                                <label for="email" class="contact__label">Email adresa</label>
-                                <input type="email" id="email" name="email" class="contact__input" required>
-                            </div>
-                            
-                            <div class="contact__form-group">
-                                <label for="phone" class="contact__label">Telefon</label>
-                                <input type="tel" id="phone" name="phone" class="contact__input" required>
-                            </div>
-                            
-                            <div class="contact__form-group">
-                                <label for="service" class="contact__label">Vrsta usluge</label>
-                                <select id="service" name="service" class="contact__input" required>
-                                    <option value="">Odaberite uslugu</option>
-                                    <option value="engine">Popravka motora</option>
-                                    <option value="tires">Gume i felge</option>
-                                    <option value="diagnostic">Dijagnostika</option>
-                                    <option value="other">Ostalo</option>
-                                </select>
-                            </div>
-                            
-                            <div class="contact__form-group">
-                                <label for="message" class="contact__label">Poruka</label>
-                                <textarea id="message" name="message" class="contact__input contact__textarea" rows="5" placeholder="Opišite problem ili postavite pitanje..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="button button--primary contact__button">
-                                Pošaljite poruku
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="contact__info">
-                        <div class="contact__info-item">
-                            <div class="contact__info-icon">📍</div>
-                            <div class="contact__info-content">
-                                <h4>Adresa</h4>
-                                <p>Industrijska zona bb<br>71000 Sarajevo, BiH</p>
-                            </div>
-                        </div>
+                        <label for="model">Model Automobila (opciono )</label>
+                        <input type="text" id="model" name="model">
                         
-                        <div class="contact__info-item">
-                            <div class="contact__info-icon">📞</div>
-                            <div class="contact__info-content">
-                                <h4>Telefon</h4>
-                                <p>+387 33 123 456<br>+387 61 123 456</p>
-                            </div>
-                        </div>
+                        <label for="poruka">Vaša Poruka</label>
+                        <textarea id="poruka" name="poruka" rows="5" required></textarea>
                         
-                        <div class="contact__info-item">
-                            <div class="contact__info-icon">✉️</div>
-                            <div class="contact__info-content">
-                                <h4>Email</h4>
-                                <p>info@proauto.ba<br>servis@proauto.ba</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact__info-item">
-                            <div class="contact__info-icon">🕒</div>
-                            <div class="contact__info-content">
-                                <h4>Radno vrijeme</h4>
-                                <p>Pon - Pet: 08:00 - 18:00<br>
-                                   Sub: 08:00 - 14:00<br>
-                                   Ned: Zatvoreno</p>
-                            </div>
-                        </div>
-                    </div>
+                        <button type="submit" class="cta-button">Pošalji Upit</button>
+                        <p id="form-status"></p>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__container">
-                <div class="footer__content">
-                    <div class="footer__section">
-                        <h3 class="footer__title">ProAuto Servis</h3>
-                        <p class="footer__description">
-                            Vaš pouzdani partner za održavanje i popravku vozila. 
-                            Kvalitet i profesionalnost od 2008. godine.
-                        </p>
-                    </div>
-                    
-                    <div class="footer__section">
-                        <h4 class="footer__subtitle">Brzi linkovi</h4>
-                        <ul class="footer__links">
-                            <li><a href="#home" class="footer__link">Početna</a></li>
-                            <li><a href="#services" class="footer__link">Usluge</a></li>
-                            <li><a href="#about" class="footer__link">O nama</a></li>
-                            <li><a href="#contact" class="footer__link">Kontakt</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__section">
-                        <h4 class="footer__subtitle">Usluge</h4>
-                        <ul class="footer__links">
-                            <li><a href="#services" class="footer__link">Popravka motora</a></li>
-                            <li><a href="#services" class="footer__link">Gume i felge</a></li>
-                            <li><a href="#services" class="footer__link">Dijagnostika</a></li>
-                            <li><a href="#services" class="footer__link">Hitne intervencije</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer__section">
-                        <h4 class="footer__subtitle">Kontakt</h4>
-                        <div class="footer__contact">
-                            <p>📍 Industrijska zona bb, Sarajevo</p>
-                            <p>📞 +387 33 123 456</p>
-                            <p>✉️ info@proauto.ba</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer__bottom">
-                    <p class="footer__copy">
-                        &copy; 2024 ProAuto Servis. Sva prava zadržana.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <p>&copy; 2025 Auto Servis [Ime Vašeg Servisa]. Sva prava zadržana.</p>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
-
